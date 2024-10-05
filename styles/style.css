@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-.flex, header .header-right, header .navbar, header {
+.flex, .contact-us, header .header-right, header .navbar, header {
   display: flex;
   align-items: center;
 }
 
-.transition, .btn, .row-img img, .educations-content h4, header .header-right a, header .navbar li a {
+.transition, .btn, .socials a, footer .footer-content .footer-box a, .contact-us .contact-us-form button, .top-educations-content .box img, .row-img img, .educations-content h4, header .header-right a, header .navbar li a {
   transition: all 0.5s ease;
 }
 
@@ -68,12 +68,12 @@ header .header-right a:first-child {
   margin-right: 20px;
 }
 
-.flex, header, header .navbar, header .header-right {
+.flex, .contact-us, header, header .navbar, header .header-right {
   display: flex;
   align-items: center;
 }
 
-.transition, .btn, .row-img img, .educations-content h4, header .navbar li a, header .header-right a {
+.transition, .btn, .socials a, footer .footer-content .footer-box a, .contact-us .contact-us-form button, .top-educations-content .box img, .row-img img, .educations-content h4, header .navbar li a, header .header-right a {
   transition: all 0.5s ease;
 }
 
@@ -124,12 +124,12 @@ header .header-right a:first-child {
   }
 }
 
-.flex, header, header .navbar, header .header-right {
+.flex, .contact-us, header, header .navbar, header .header-right {
   display: flex;
   align-items: center;
 }
 
-.transition, .btn, .row-img img, .educations-content h4, header .navbar li a, header .header-right a {
+.transition, .btn, .socials a, footer .footer-content .footer-box a, .contact-us .contact-us-form button, .top-educations-content .box img, .row-img img, .educations-content h4, header .navbar li a, header .header-right a {
   transition: all 0.5s ease;
 }
 
@@ -209,6 +209,189 @@ header .header-right a:first-child {
   font-weight: 500;
   line-height: 30px;
   margin-bottom: 35px;
+}
+
+.flex, .contact-us, header, header .navbar, header .header-right {
+  display: flex;
+  align-items: center;
+}
+
+.transition, .btn, .socials a, footer .footer-content .footer-box a, .contact-us .contact-us-form button, .top-educations-content .box img, header .navbar li a, header .header-right a, .educations-content h4, .row-img img {
+  transition: all 0.5s ease;
+}
+
+.center-text {
+  text-align: center;
+}
+.center-text h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.top-educations-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+.top-educations-content .box {
+  position: relative;
+}
+.top-educations-content .box:hover > img {
+  transform: scale(1.05);
+}
+.top-educations-content .box img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  filter: brightness(70%);
+  display: block;
+}
+.top-educations-content .box .icons {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.top-educations-content .box .icons p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.top-educations-content .box .icons p i {
+  color: #ffa343;
+  margin-right: 10px;
+}
+
+.center-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.flex, .contact-us, header, header .navbar, header .header-right {
+  display: flex;
+  align-items: center;
+}
+
+.transition, .btn, .socials a, footer .footer-content .footer-box a, .contact-us .contact-us-form button, header .navbar li a, header .header-right a, .educations-content h4, .row-img img, .top-educations-content .box img {
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 1200px) {
+  .contact-us {
+    flex-direction: column;
+  }
+}
+.contact-us .contact-us-img {
+  width: 50%;
+}
+@media (max-width: 1200px) {
+  .contact-us .contact-us-img {
+    width: 90%;
+  }
+}
+.contact-us .contact-us-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.contact-us .contact-us-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+@media (max-width: 1200px) {
+  .contact-us .contact-us-form {
+    width: 90%;
+  }
+}
+.contact-us .contact-us-form label {
+  margin-bottom: 20px;
+}
+.contact-us .contact-us-form input,
+.contact-us .contact-us-form button {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.contact-us .contact-us-form button {
+  background-color: #f8a041;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+.contact-us .contact-us-form button:hover {
+  background-color: #a48032;
+  color: #000000;
+}
+
+.flex, header, header .navbar, header .header-right, .contact-us {
+  display: flex;
+  align-items: center;
+}
+
+.transition, .btn, .socials a, footer .footer-content .footer-box a, header .navbar li a, header .header-right a, .educations-content h4, .row-img img, .top-educations-content .box img, .contact-us .contact-us-form button {
+  transition: all 0.5s ease;
+}
+
+footer {
+  padding: 40px;
+}
+footer .footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 2rem;
+}
+footer .footer-content .footer-box {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-content .footer-box h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+footer .footer-content .footer-box a {
+  color: #979797;
+  margin-bottom: 0.8rem;
+}
+footer .footer-content .footer-box a:hover {
+  color: #ffffff;
+  transform: translateX(-5px);
+}
+
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #202020;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 20px;
+}
+.socials a:hover {
+  background-color: #ffa343;
+  transform: translateX(-4px);
+}
+.socials a:hover i {
+  color: #000000;
+}
+
+.copright {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  color: #979797;
+  font-size: 15px;
 }
 
 * {
